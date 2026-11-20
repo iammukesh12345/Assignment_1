@@ -56,8 +56,8 @@ function App() {
                 justifyContent: "space-between",
                 padding: "1rem calc(100vh - 50rem)",
             }}>
-                <TextField id="standard-basic" label="Please enter the Employee name here" variant="standard" onChange={handleSetName}/>
-                <TextField id="standard-number" label="Id"
+                <TextField id="standard-basic" label="Employee name here" variant="standard" onChange={handleSetName}/>
+                <TextField id="standard-number" label="Employee Id"
                     type="number"
                     InputLabelProps={{
                         shrink: true,
