@@ -1,12 +1,38 @@
-**/.terraform/
-**/*.tfstate
-**/*.tfstate.*
-**/*.tfvars
-**/tfplan
-**/tfplan.*
-**/*.tfplan
-**/crash.log
-*.pem
+# Environment and credentials
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+kubeconfig
+*.kubeconfig
+
+# Terraform state and sensitive variables
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+
+# Database backups
+*.sql
+*.dump
+
+# Temporary and backup files
+*.backup
+*.bak
+*.log
+
+# Frontend dependencies
+node_modules/
+build/
+dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
